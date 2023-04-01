@@ -1,6 +1,13 @@
 
 # Singleton
 
+When a class is expected to have only one instance. e.g. Runtime
+
+Considered anti-pattern by some, since:
+
+- violation of single responsibility
+- increased coupling
+
 ## Basic
 
 ```java
