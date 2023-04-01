@@ -103,7 +103,7 @@ public class MyClass {
 ```java
 public class MyClass {
 
-    private static MyClass instance = new MyClass();
+    private static final MyClass instance = new MyClass();
 
     private MyClass() {}
 
@@ -118,7 +118,7 @@ public class MyClass {
 ```java
 public class MyClass {
 
-    public static MyClass instance = new MyClass();
+    public static final MyClass instance = new MyClass();
 
     private MyClass() {}
 }
