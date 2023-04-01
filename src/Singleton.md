@@ -124,3 +124,20 @@ public class MyClass {
 }
 ```
 
+# Extra [Untested]
+
+## Static Block
+
+```java
+public class MyClass {
+
+    public static MyClass instance;
+
+    static {
+        instance = new MyClass();
+    }
+
+    private MyClass() {}
+}
+```
+
