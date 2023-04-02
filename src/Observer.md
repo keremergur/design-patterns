@@ -13,20 +13,20 @@ public interface JobObserver {
 ```java
 public class JobMarket {
 
-    private final List<JobObserver> obsList = new ArrayList<>();
-    private final List<String> jobList = new ArrayList<>();
+    private final Set<JobObserver> obsSet = new HashSet<>();
+    private final Set<String> jobSet = new HashSet<>();
 
     public void addJob(String job) {
-        jobList.add(job);
-        obsList.forEach(o -> o.newOffer(job));
+        jobSet.add(job);
+        obsSet.forEach(o -> o.newOffer(job));
     }
 
     public void addObserver(JobObserver o) {
-        obsList.add(o);
+        obsSet.add(o);
     }
 
     public void removeObserver(JobObserver o) {
-        obsList.remove(o);
+        obsSet.remove(o);
     }
 }
 ```
