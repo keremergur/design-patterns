@@ -3,7 +3,7 @@
 
 Get informed about a state change.
 
-Publish/subscribe principle (newsletter)
+## Publish / Subscribe Principle (newsletter)
 
 ```java
 public interface JobObserver {
@@ -30,3 +30,18 @@ public class JobMarket {
     }
 }
 ```
+
+## Multiple Provider
+
+```java
+public interface JobProvider {
+    public void addJob(String job);
+    public void addObserver(JobObserver o);
+    public void removeObserver(JobObserver o);
+}
+```
+
+## Variations
+
+- Push method: notify observer and pass information.
+- Pull method: only notify observer, observer may fetch the information itself.
