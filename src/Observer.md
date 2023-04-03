@@ -45,3 +45,21 @@ public interface JobProvider {
 
 - Push method: notify observer and pass information.
 - Pull method: only notify observer, observer may fetch the information itself.
+
+## Standard Library
+
+```scala
+java.util.Observer (interface) [deprecated]
+java.util.Observable (class) [deprecated]
+java.util.concurrent.Flow.Processor (interface)
+java.util.concurrent.Flow.Publisher (interface)
+java.util.concurrent.Flow.Subscriber (interface)
+java.util.concurrent.Flow.Subscription (interface)
+
+helper:
+java.util.concurrent.Executor
+java.util.concurrent.CompletableFuture
+javafx.collections.ObservableList
+java.util.EventObject
+java.util.EventListener
+```
